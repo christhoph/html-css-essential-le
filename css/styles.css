@@ -1,13 +1,15 @@
-html {
+:root {
   font-size: 16px;
+
+  /* CSS variables */
+  --gray_10: #616161;
+  --gray_20: #212429;
+  --gray_30: #212121;
 }
 
-body {
-  color: #212121;
-}
-
+body,
 a {
-  color: #212121;
+  color: var(--gray_30);
 }
 
 h1 {
@@ -23,5 +25,23 @@ h3 {
 }
 
 header {
+  /* overwrite a css variable */
+  /* --gray_10: blue; */
+
+  color: var(--gray_10);
   font-size: 0.875rem;
+}
+
+header a {
+  color: var(--gray_10);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--gray_30);
+}
+
+nav details summary {
+  font-weight: bold;
+  cursor: pointer;
 }
