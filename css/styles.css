@@ -62,7 +62,19 @@ nav details summary {
   cursor: pointer;
 }
 
-h3::after {
+.section-content {
+  counter-reset: title_list;
+}
+
+.section-content h3 {
+  counter-increment: title_list;
+}
+
+.section-content h3::before {
+  content: counter(title_list) ". ";
+}
+
+.section-content h3::after {
   content: "";
   block-size: 4px;
   inline-size: 80px;
