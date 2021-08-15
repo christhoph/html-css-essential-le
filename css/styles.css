@@ -8,6 +8,7 @@
   --gray_10: #616161;
   --gray_20: #212429;
   --gray_30: #212121;
+  --yellow: #fec62e;
 }
 
 body {
@@ -32,6 +33,12 @@ h3 {
   font-size: 1.5rem;
 }
 
+.hero {
+  block-size: 350px;
+  inline-size: 100%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), transparent), url("/images/pattern.svg");
+}
+
 header {
   /* overwrite a css variable */
   /* --gray_10: blue; */
@@ -52,4 +59,8 @@ header a:hover {
 nav details summary {
   font-weight: bold;
   cursor: pointer;
+}
+
+pre {
+  background: var(--yellow);
 }
