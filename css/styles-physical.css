@@ -101,6 +101,7 @@ main hr {
   inline-size: 80px;
   background: var(--gray_20);
   display: block;
+  margin-top: 4px;
 }
 
 section:not(.section-content) > h2 {
@@ -120,9 +121,26 @@ section:not(.section-content) h3 {
 }
 
 blockquote {
+  padding-left: 16px;
   margin: 32px 0 112px;
+  font-size: 24px;
+}
+
+blockquote p {
+  color: var(--gray_20);
+}
+
+blockquote span {
+  color: var(--gray_10);
+}
+
+blockquote span::before {
+  content: "- ";
 }
 
 pre {
   background: var(--yellow);
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
 }
