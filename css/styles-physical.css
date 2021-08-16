@@ -5,11 +5,17 @@
   font-size: 16px;
 
   /* CSS variables */
+  --white: #ffffff;
+  --black: #000000;
+  --yellow: #fec62e;
   --gray_10: #616161;
   --gray_20: #424242;
   --gray_30: #212429;
   --gray_40: #212121;
-  --yellow: #fec62e;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +39,9 @@ h2 {
 }
 
 h3 {
+  background: var(--white);
+  position: sticky;
+  top: 0;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -43,12 +52,41 @@ h3 {
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), transparent), url("/images/pattern.svg");
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
 header {
   /* overwrite a css variable */
   /* --gray_10: blue; */
+  inline-size: 208px;
+  position: absolute;
+  top: 0;
+  left: -208px;
 
   color: var(--gray_10);
   font-size: 0.875rem;
+}
+
+header h2,
+header summary,
+header a {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+header ol {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+header ol li {
+  margin: 10px 0;
 }
 
 header a {
@@ -80,11 +118,11 @@ main hr {
 
 .wrapper {
   inline-size: 902px;
-  margin: auto;
+  margin: 64px auto 0;
 }
 
 .main-content {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .section-content {
@@ -126,6 +164,7 @@ section:not(.section-content) ul li {
 }
 
 section:not(.section-content) h3 {
+  position: initial;
   margin: 40px 0 16px;
 }
 
