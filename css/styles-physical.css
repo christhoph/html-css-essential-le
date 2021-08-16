@@ -78,6 +78,15 @@ main hr {
   margin: 64px 0;
 }
 
+.wrapper {
+  inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding: 20px;
+}
+
 .section-content {
   counter-reset: title_list;
 }
