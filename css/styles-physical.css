@@ -121,6 +121,7 @@ section:not(.section-content) h3 {
 }
 
 blockquote {
+  border-left: 4px solid var(--gray_40);
   padding-left: 16px;
   margin: 32px 0 112px;
   font-size: 24px;
@@ -128,6 +129,7 @@ blockquote {
 
 blockquote p {
   color: var(--gray_20);
+  line-height: 32px;
 }
 
 blockquote span {
