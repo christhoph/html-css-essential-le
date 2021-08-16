@@ -1,4 +1,4 @@
-/* @import url("/css/fonts/charter-font.css"); */
+/* @import url("./fonts/charter-font.css"); */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
@@ -49,7 +49,7 @@ h3 {
 .hero {
   block-size: 350px;
   inline-size: 100%;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), transparent), url("/images/pattern.svg");
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.25), transparent), url("../images/pattern.svg");
 }
 
 .header {
